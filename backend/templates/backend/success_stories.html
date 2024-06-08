@@ -1,0 +1,88 @@
+{% extends "backend/base.html" %}
+
+{% block title %}Casos de Éxito de Consultoría en IA & IT - Real IT Creator{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="text-center">Casos de Éxito</h1>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Transformación de la Salud</h2>
+            <img src="https://picsum.photos/600/400" alt="Imagen de Salud" class="img-fluid mb-3">
+            <p>Un hospital que implementa un sistema de diagnóstico por IA puede reducir los tiempos de diagnóstico drásticamente, permitiendo un tratamiento más rápido y efectivo para los pacientes. La IA también ayuda a predecir brotes de enfermedades y a gestionar el inventario de medicamentos de manera eficiente.</p>
+        </div>
+        <div class="col-md-6">
+            <h2>Optimización Financiera</h2>
+            <img src="https://picsum.photos/600/400" alt="Imagen de Finanzas" class="img-fluid mb-3">
+            <p>En el sector financiero, la IA se utiliza para predecir tendencias del mercado y tomar decisiones comerciales informadas. Los bancos que implementa estas soluciones puede ofrecer mejores servicios a sus clientes y maximizar sus ganancias al reducir los riesgos financieros.</p>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <h2>Educación del Futuro</h2>
+            <img src="https://picsum.photos/600/400" alt="Imagen de Educación" class="img-fluid mb-3">
+            <p>En el ámbito educativo, la IA se utiliza para personalizar el aprendizaje. Por ejemplo, una plataforma en línea que adapta el contenido de estudio a las necesidades individuales de cada estudiante. Esto mejora el rendimiento académico y hace que el aprendizaje sea más accesible.</p>
+        </div>
+        <div class="col-md-6">
+            <h2>Comercio Electrónico Inteligente</h2>
+            <img src="https://picsum.photos/600/400" alt="Imagen de Comercio Electrónico" class="img-fluid mb-3">
+            <p>Un minorista en línea implementa la IA para mejorar la experiencia del cliente. La IA recomienda productos personalizados basados en el historial de compras y el comportamiento del usuario. Esto aumenta las ventas y la satisfacción del cliente.</p>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-12">
+            <p>En 'Real IT Creator', estamos comprometidos a brindar soluciones de IA y IT que transforman negocios y procesos en diferentes sectores. Nuestro enfoque personalizado y experiencia en el campo nos permite ayudar a nuestros clientes a lograr resultados excepcionales. Si deseas aprender más sobre cómo podemos ayudarte, no dudes en contactarnos.</p>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12 text-center">
+            <a class="btn btn-primary" href="{% url 'contact' %}">Contacta Ahora</a>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12">
+            <h2>Enlaces Relacionados</h2>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-4">
+    <div class="row text-center">
+        <div class="col-md-4">
+            <a href="{% url 'about' %}" class="btn btn-custom">
+                <i class="bi bi-person"></i>
+                <p>Sobre Nosotros</p>
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a href="{% url 'services' %}" class="btn btn-custom">
+                <i class="bi bi-gear"></i>
+                <p>Servicios</p>
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a href="{% url 'blog' %}" class="btn btn-custom">
+                <i class="bi bi-journal"></i>
+                <p>Blog</p>
+            </a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

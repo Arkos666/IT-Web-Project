@@ -1,0 +1,107 @@
+{% extends "backend/base.html" %}
+
+{% block title %}Real IT Creator - Quiénes Somos{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12">
+            <h1>Quiénes Somos</h1>
+            <p class="text-muted">Consultoría en IA & IT</p>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <h2>Historia y Filosofía</h2>
+            <p>
+                Real IT Creator comenzó con la visión de proporcionar soluciones innovadoras en el campo de la Inteligencia Artificial (IA) y la Tecnología de la Información (IT). Nuestra misión es impulsar la transformación digital de las empresas a través de la implementación de soluciones avanzadas de IA y IT.
+            </p>
+            <p>
+                Estamos comprometidos con la calidad y la satisfacción del cliente. Creemos que la tecnología puede ser una fuerza poderosa para mejorar los procesos empresariales y estamos dedicados a ayudar a nuestros clientes a alcanzar sus objetivos.
+            </p>
+        </div>
+        <div class="col-md-6">
+            <h2>El Equipo</h2>
+            <p>
+                En Real IT Creator, nuestro equipo está formado por expertos en el campo de la IA y la IT. Nos enorgullecemos de nuestra pasión por la tecnología y nuestra dedicación para brindar soluciones excepcionales a nuestros clientes.
+            </p>
+            <p>
+                Creemos en la importancia de la cercanía y la proximidad al cliente. Trabajamos mano a mano con nuestros clientes para comprender sus necesidades y ofrecer soluciones personalizadas que impulsen su éxito en el mundo digital.
+            </p>
+        </div>
+    </div>
+
+    <hr class="hr hr-blurry" />
+
+
+    <div class="row mt-4">
+        <div class="col-12">
+            <h2>Testimonios y Citas</h2>
+        </div>
+
+
+        <div class="col-md-6">
+        <div class="card mb-6">
+            <img src="https://picsum.photos/400/300" class="card-img-top" alt="Cita 1">
+            <div class="card-body">
+                <blockquote class="blockquote">
+                <p class="mb-0 text-center">"La innovación distingue a los líderes de los seguidores."</p>
+                <footer class="blockquote-footer">Steve Jobs</footer>
+            </blockquote>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card mb-6">
+            <img src="https://picsum.photos/400/300" class="card-img-top" alt="Cita 2">
+            <div class="card-body">
+                <blockquote class="blockquote">
+                <p class="mb-0 text-center">"La tecnología y la innovación son la base de nuestro éxito."</p>
+                <footer class="blockquote-footer">Mark Zuckerberg</footer>
+            </blockquote>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <hr class="hr hr-blurry" />
+
+    <div class="row mt-4">
+        <div class="col-12">
+            <h2>Más información</h2>
+            <p class="text-muted">¿Interesado en nuestras soluciones de consultoría en IA y IT? ¡Póngase en contacto con nosotros!</p>
+            <a class="btn btn-primary" href="{% url 'contact' %}">Contacta ahora</a>
+        </div>
+    </div>
+
+
+    <hr class="hr hr-blurry" />
+
+    <div class="row mt-4">
+        <div class="col-12">
+            <h2>Enlaces Relacionados</h2>
+        </div>
+        <div class="col-md-4 text-center">
+            <a href="{% url 'services' %}" class="btn btn-custom">
+                <i class="bi bi-laptop"></i>
+                <p>Servicios</p>
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a href="{% url 'success_stories' %}" class="btn btn-custom">
+                <i class="bi bi-trophy"></i>
+                <p>Casos de Éxito</p>
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a href="{% url 'blog' %}" class="btn btn-custom">
+                <i class="bi bi-journal"></i>
+                <p>Blog</p>
+            </a>
+        </div>
+    </div>
+
+
+</div>
+{% endblock %}

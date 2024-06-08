@@ -1,0 +1,148 @@
+{% extends "backend/base.html" %}
+
+{% block title %}Servicios de Consultoría en IA & IT - Real IT Creator{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="text-center">Nuestros Servicios</h1>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Auditorías de IA y IT</h2>
+            <p>Realizamos evaluaciones exhaustivas de las infraestructuras de IA y IT de tu empresa. Nuestros expertos identifican áreas de mejora y te proporcionan recomendaciones precisas para optimizar tus sistemas.</p>
+        </div>
+        <div class="col-md-6">
+            <h2>Desarrollo e Implementación de IA</h2>
+            <p>Creación y aplicación de soluciones de IA personalizadas para impulsar la eficiencia y la innovación en los procesos empresariales. Te ayudamos a aprovechar todo el potencial de la inteligencia artificial.</p>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <h2>Seguridad Informática y Protección de Datos</h2>
+            <p>Ofrecemos servicios especializados para mejorar la seguridad de tus sistemas y proteger tus datos más críticos. Mantén tus activos digitales a salvo de amenazas cibernéticas.</p>
+        </div>
+        <div class="col-md-6">
+            <h2>Capacitación y Talleres en IA</h2>
+            <p>Impartimos capacitaciones y talleres de IA adaptados a tus necesidades. Aprovecha nuestra experiencia para formar a tu equipo y mantenerlos actualizados en las últimas tendencias tecnológicas.</p>
+        </div>
+    </div>
+</div>
+
+<hr class="hr hr-blurry" />
+
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12">
+            <h2>Paquetes de Servicios</h2>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="https://picsum.photos/400/300" class="card-img-top" alt="Paquete 1">
+                <div class="card-body">
+                    <h5 class="card-title">Paquete Empresarial</h5>
+                    <p class="card-text">Optimiza tus operaciones con nuestro paquete empresarial. Incluye auditorías de IA y IT, desarrollo e implementación de IA y formación especializada.</p>
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <a class="btn btn-primary" href="{% url 'contact' %}">Más información</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="https://picsum.photos/400/300" class="card-img-top" alt="Paquete 2">
+                <div class="card-body">
+                    <h5 class="card-title">Paquete Startup</h5>
+                    <p class="card-text">Impulsa tu startup tecnológica con nuestro paquete Startup. Te ofrecemos desarrollo de IA, seguridad informática y capacitación para un crecimiento rápido.</p>
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <a class="btn btn-primary" href="{% url 'contact' %}">Más información</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="https://picsum.photos/400/300" class="card-img-top" alt="Paquete 3">
+                <div class="card-body">
+                    <h5 class="card-title">Paquete Educativo</h5>
+                    <p class="card-text">Moderniza la educación con nuestro paquete educativo. Incluye desarrollo de IA, capacitación y asesoramiento en tecnología educativa.</p>
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <a class="btn btn-primary" href="{% url 'contact' %}">Más información</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr class="hr hr-blurry" />
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12">
+            <h2>¡Llámanos a la Acción!</h2>
+            <p>Si estás interesado en alguno de nuestros servicios o deseas obtener más información, no dudes en ponerte en contacto con nosotros. Estamos aquí para ayudarte.</p>
+        </div>
+    </div>
+</div>
+
+<hr class="hr hr-blurry" />
+
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-12">
+            <a class="btn btn-primary" href="{% url 'contact' %}">Contacta Ahora</a>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12 text-center">
+            <h2>Enlaces Relacionados</h2>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-4">
+    <div class="row text-center">
+        <div class="col-md-4">
+            <a href="{% url 'about' %}" class="btn btn-custom">
+                <i class="bi bi-person"></i>
+                <p>Sobre Nosotros</p>
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a href="{% url 'success_stories' %}" class="btn btn-custom">
+                <i class="bi bi-trophy"></i>
+                <p>Casos de Éxito</p>
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a href="{% url 'blog' %}" class="btn btn-custom">
+                <i class="bi bi-journal"></i>
+                <p>Blog</p>
+            </a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
